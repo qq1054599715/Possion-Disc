@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Zyc;
 
 public class TestPossionDisc2 : MonoBehaviour
 {
@@ -51,10 +50,6 @@ public class TestPossionDisc2 : MonoBehaviour
 			  Material m = new Material(Shader.Find("Unlit/Color"));
 			  newPoint.GetComponent<Renderer>().material = m;
 			  newPoint.GetComponent<Renderer>().material.color = Color.red;
-			  DelayPlayer.NewDelayDo(this, () =>
-			  {
-				  newPoint.GetComponent<Renderer>().material.color = Color.white;
-			  },1f);
 			  yield return 1;
 		  }
 		  else
