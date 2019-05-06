@@ -94,7 +94,7 @@ public class PossionDisc
                 int idx = Mathf.FloorToInt(newPoint.x / cellSize);
                 int idy = Mathf.FloorToInt(newPoint.y / cellSize);
 
-                if (idx > -1 && idx < rows && idy > -1 && idy < cols)
+                if (idx > -1 && idx < cols && idy > -1 && idy < cows)
                 {
                     bool fit = IsFit(idx, idy, newPoint);
                     if (fit == true)
